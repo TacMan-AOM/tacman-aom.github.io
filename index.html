@@ -51,25 +51,22 @@
     </div>
     <div class="navbar-menu">
       <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-        <a class="navbar-item" href="https://yuyangli.com">
-          <span class="icon">
-            <i class="fas fa-home"></i>
-          </span>
-        </a>
-
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
             Related Research
           </a>
           <div class="navbar-dropdown">
             <a class="navbar-item" href="https://yzhu.io/publication/tactile2024ral/paper.pdf" target="_blank">
-                [RA-L 24] MiniTac: A 8mm Tactile Sensor
+              [RA-L 24] MiniTac: A 8mm Tactile Sensor
             </a>
             <a class="navbar-item" href="https://multigrasp.github.io" target="_blank">
               [RA-L 24] MultiGrasp: Multi-object Grasping
             </a>
-            <a class="navbar-item" href="https://anyskill.github.io" target="_blank">
-                [CVPR 24] AnySkill: Open-vocab Physical Skills
+            <a class="navbar-item" href="https://arxiv.org/abs/2508.02204" target="_blank">
+              [ArXiv] TacMan-Turbo: Proactive Tactile Control for Articulated Object Manipulation
+            </a>
+            <a class="navbar-item" href="https://www.nature.com/articles/s42256-025-01053-3" target="_blank">
+              [NMI25] F-TAC Hand: A Biomimetic Hand Featuring High-Resolution Tactile Sensing
             </a>
           </div>
         </div>
@@ -84,16 +81,19 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Tac-Man: Tactile-Informed Prior-Free Manipulation of Articulated Objects</h1>
+            <h1 class="title is-1 publication-title">Tac-Man: Tactile-Informed Prior-Free Manipulation of Articulated
+              Objects</h1>
             <h5 class="title is-5 publication-title">IEEE Transactions on Robotics (T-RO) 2024</h5>
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><a href="https://zihangzhao.com">Zihang Zhao</a><sup>1 &#42;</sup>,</span>
-              <span class="author-block"><a href="https://yuyangli.com">Yuyang Li</a><sup>1,2,3 &#42;</sup>,</span>
-              <span class="author-block"><a href="https://scholar.google.com/citations?user=n_mYangAAAAJ">Wanlin Li</a><sup>2</sup>,</span>
+              <span class="author-block"><a href="https://zihangzhao.com">Zihang Zhao</a><sup>1⚖️;</sup>,</span>
+              <span class="author-block"><a href="https://yuyangli.com">Yuyang Li</a><sup>1,2,3⚖️;</sup>,</span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=n_mYangAAAAJ">Wanlin
+                  Li</a><sup>2</sup>,</span>
               <span class="author-block"><a href="https://yuyangli.com">Zhenghao Qi</a><sup>1,2,3</sup>,</span>
-              <span class="author-block"><a href="https://leleucla.github.io/">Lecheng Ruan</a><sup>4 &#8224;</sup>,</span>
-              <span class="author-block"><a href="https://yzhu.io">Yixin Zhu</a><sup>1 &#8224;</sup>,</span>
-              <span class="author-block"><a href="https://www.sems.qmul.ac.uk/staff/k.althoefer">Kaspar Althoefer</a><sup>5</sup>,</span>
+              <span class="author-block"><a href="https://leleucla.github.io/">Lecheng Ruan</a><sup>4✉️</sup>,</span>
+              <span class="author-block"><a href="https://yzhu.io">Yixin Zhu</a><sup>1✉️</sup>,</span>
+              <span class="author-block"><a href="https://www.sems.qmul.ac.uk/staff/k.althoefer">Kaspar
+                  Althoefer</a><sup>5</sup>,</span>
             </div>
 
             <div class="is-size-5 publication-authors">
@@ -103,17 +103,18 @@
               <span class="author-block"><sup>3</sup>Department of Automation, Tsinghua University</span>
               <span class="author-block"><sup>4</sup>College of Engineering, Peking University</span>
               <br />
-              <span class="author-block"><sup>5</sup>Center for Advanced Robotics @ Queen Mary, School of Engineering and Materials Science, Queen Mary University of London</span>
+              <span class="author-block"><sup>5</sup>Center for Advanced Robotics @ Queen Mary, School of Engineering
+                and Materials Science, Queen Mary University of London</span>
               <br />
-              <span class="author-block"><sup>&#42;</sup>Equal Contributor&emsp14;<sup>&#8224;</sup>Corresponding Author</span>
+              <span class="eql-cntrb"><small><br /><sup>⚖️</sup> Equal Contributor</small></span>
+              <span class="eql-cntrb"><small>&nbsp&nbsp&nbsp&nbsp&nbsp<sup>✉️</sup> Corresponding Author</small></span>
             </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2403.01694"
-                    class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/pdf/2403.01694" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -134,7 +135,7 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code (Simulation Study)</span>
+                    <span>Code</span>
                   </a>
                 </span>
               </div>
@@ -154,22 +155,32 @@
         </h2>
         <div class="content has-text-justified">
           <p>
-            Integrating robotics into human-centric environments such as homes, necessitates advanced manipulation skills as robotic devices will need to engage with articulated objects like doors and drawers. Key challenges in robotic manipulation are the unpredictability and diversity of these objects' internal structures, which render models based on priors, both explicit and implicit, inadequate. Their reliability is significantly diminished by pre-interaction ambiguities, imperfect structural parameters, encounters with unknown objects, and unforeseen disturbances. Here, we present a prior-free strategy, Tac-Man, focusing on maintaining stable robot-object contact during manipulation. Utilizing tactile feedback, but independent of object priors, Tac-Man enables robots to proficiently handle a variety of articulated objects, including those with complex joints, even when influenced by unexpected disturbances. Advancements in tactile-informed approaches significantly expand the scope of robotic applications in human-centric environments, particularly where accurate models are difficult to obtain.
+            Integrating robotics into human-centric environments such as homes, necessitates advanced manipulation
+            skills as robotic devices will need to engage with articulated objects like doors and drawers. Key
+            challenges in robotic manipulation are the unpredictability and diversity of these objects' internal
+            structures, which render models based on priors, both explicit and implicit, inadequate. Their reliability
+            is significantly diminished by pre-interaction ambiguities, imperfect structural parameters, encounters with
+            unknown objects, and unforeseen disturbances. Here, we present a prior-free strategy, Tac-Man, focusing on
+            maintaining stable robot-object contact during manipulation. Utilizing tactile feedback, but independent of
+            object priors, Tac-Man enables robots to proficiently handle a variety of articulated objects, including
+            those with complex joints, even when influenced by unexpected disturbances. Advancements in tactile-informed
+            approaches significantly expand the scope of robotic applications in human-centric environments,
+            particularly where accurate models are difficult to obtain.
           </p>
         </div>
       </div>
     </div>
   </section>
- 
+
   <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
           <div style="padding:56.25% 0 0 0;position:relative;"><iframe
-            src="https://player.vimeo.com/video/1026777549?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-            style="position:absolute;top:0;left:0;width:100%;height:100%;"
-            title="[TRO 2024] Tac-Man: Tactile-Informed Prior-Free Manipulation of Articulated Objects"></iframe>
+              src="https://player.vimeo.com/video/1026777549?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;"
+              title="[TRO 2024] Tac-Man: Tactile-Informed Prior-Free Manipulation of Articulated Objects"></iframe>
           </div>
           <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
@@ -193,10 +204,10 @@
         <div class="column is-full-width">
           <h3 class="title is-3">manipulation trajectories in the teaser figure</h3>
           <div style="padding:56.25% 0 0 0;position:relative;"><iframe
-            src="https://player.vimeo.com/video/907222643?h=9793e630b0&badge=0&autopause=0&player_id=0&app_id=58479"
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-            style="position:absolute;top:0;left:0;width:100%;height:100%;"
-            title="Supplementary Video S0: manipulation trajectories in the teaser figure"></iframe>
+              src="https://player.vimeo.com/video/907222643?h=9793e630b0&badge=0&autopause=0&player_id=0&app_id=58479"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;"
+              title="Supplementary Video S0: manipulation trajectories in the teaser figure"></iframe>
           </div>
           <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
@@ -210,10 +221,10 @@
         <div class="column is-full-width">
           <h3 class="title is-3">manipulation under ambiguous priors</h3>
           <div style="padding:56.25% 0 0 0;position:relative;"><iframe
-            src="https://player.vimeo.com/video/907224197?h=f38b1dea62&badge=0&autopause=0&player_id=0&app_id=58479"
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-            style="position:absolute;top:0;left:0;width:100%;height:100%;"
-            title="Supplementary Video S1: manipulation under ambiguous priors"></iframe>
+              src="https://player.vimeo.com/video/907224197?h=f38b1dea62&badge=0&autopause=0&player_id=0&app_id=58479"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;"
+              title="Supplementary Video S1: manipulation under ambiguous priors"></iframe>
           </div>
           <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
@@ -227,10 +238,10 @@
         <div class="column is-full-width">
           <h3 class="title is-3">manipulation under imperfect priors</h3>
           <div style="padding:56.25% 0 0 0;position:relative;"><iframe
-            src="https://player.vimeo.com/video/907224440?h=b059314753&badge=0&autopause=0&player_id=0&app_id=58479"
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-            style="position:absolute;top:0;left:0;width:100%;height:100%;"
-            title="supplementary video S2: manipulation under imperfect priors"></iframe>
+              src="https://player.vimeo.com/video/907224440?h=b059314753&badge=0&autopause=0&player_id=0&app_id=58479"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;"
+              title="supplementary video S2: manipulation under imperfect priors"></iframe>
           </div>
           <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
@@ -244,10 +255,10 @@
         <div class="column is-full-width">
           <h3 class="title is-3">manipulation under unknown priors</h3>
           <div style="padding:56.25% 0 0 0;position:relative;"><iframe
-            src="https://player.vimeo.com/video/907224671?h=cb9aa51fcb&badge=0&autopause=0&player_id=0&app_id=58479"
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-            style="position:absolute;top:0;left:0;width:100%;height:100%;"
-            title="supplementary video S3: manipulation under unknown priors"></iframe>
+              src="https://player.vimeo.com/video/907224671?h=cb9aa51fcb&badge=0&autopause=0&player_id=0&app_id=58479"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;"
+              title="supplementary video S3: manipulation under unknown priors"></iframe>
           </div>
           <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
@@ -261,10 +272,10 @@
         <div class="column is-full-width">
           <h3 class="title is-3">manipulation under obsolescent priors</h3>
           <div style="padding:56.25% 0 0 0;position:relative;"><iframe
-            src="https://player.vimeo.com/video/907224990?h=3b4181a4e0&badge=0&autopause=0&player_id=0&app_id=58479"
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-            style="position:absolute;top:0;left:0;width:100%;height:100%;"
-            title="supplementary video S4: manipulation under obsolescent priors"></iframe>
+              src="https://player.vimeo.com/video/907224990?h=3b4181a4e0&badge=0&autopause=0&player_id=0&app_id=58479"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;"
+              title="supplementary video S4: manipulation under obsolescent priors"></iframe>
           </div>
           <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
@@ -278,10 +289,10 @@
         <div class="column is-full-width">
           <h3 class="title is-3">simulation studies</h3>
           <div style="padding:56.25% 0 0 0;position:relative;"><iframe
-            src="https://player.vimeo.com/video/907225198?h=b641a5a84d&badge=0&autopause=0&player_id=0&app_id=58479"
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-            style="position:absolute;top:0;left:0;width:100%;height:100%;"
-            title="supplementary video S5: simulation studies"></iframe>
+              src="https://player.vimeo.com/video/907225198?h=b641a5a84d&badge=0&autopause=0&player_id=0&app_id=58479"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;"
+              title="supplementary video S5: simulation studies"></iframe>
           </div>
           <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
@@ -294,7 +305,14 @@
     <div class="container is-max-desktop content">
       <h2 class="title">Acknowledgement</h2>
       <p>
-        We thank Hongjie Li (PKU), Yida Niu (PKU), and Zimo He (PKU) for setting up the experiments; Prof. Hao Dong (PKU), Zeyi Li (PKU), and Ruihai Wu (PKU) for setting up the Franka Robot; Dr. Chi Zhang (BIGAI) and Dr. Muzhi Han (UCLA) for insightful discussions; and Mr. Mish Toszeghi (QMUL) for meticulously proofreading our manuscript. This work is supported in part by the National Science and Technology Major Project (2022ZD0114900), the National Natural Science Foundation of China (62376031), the Beijing Nova Program, the State Key Lab of General AI at Peking University, the PKU-BingJi Joint Laboratory for Artificial Intelligence, the National Comprehensive Experimental Base for Governance of Intelligent Society, Wuhan East Lake High-Tech Development Zone, and the Horizon Europe Framework through the PALPABLE project (101092518).
+        We thank Hongjie Li (PKU), Yida Niu (PKU), and Zimo He (PKU) for setting up the experiments; Prof. Hao Dong
+        (PKU), Zeyi Li (PKU), and Ruihai Wu (PKU) for setting up the Franka Robot; Dr. Chi Zhang (BIGAI) and Dr. Muzhi
+        Han (UCLA) for insightful discussions; and Mr. Mish Toszeghi (QMUL) for meticulously proofreading our
+        manuscript. This work is supported in part by the National Science and Technology Major Project (2022ZD0114900),
+        the National Natural Science Foundation of China (62376009), the Beijing Nova Program, the State Key Lab of
+        General AI at Peking University, the PKU-BingJi Joint Laboratory for Artificial Intelligence, the National
+        Comprehensive Experimental Base for Governance of Intelligent Society, Wuhan East Lake High-Tech Development
+        Zone, and the Horizon Europe Framework through the PALPABLE project (101092518).
     </div>
   </section>
 
@@ -309,7 +327,9 @@
   pages={538--557},
   year={2024},
   publisher={IEEE}
-}</code></pre></div></section>
+}</code></pre>
+    </div>
+  </section>
 
 
   <footer class="footer">
